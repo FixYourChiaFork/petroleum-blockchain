@@ -443,4 +443,3 @@ async def get_est_staking_factor(total_plot_size, total_staking_balance) -> Deci
         sf = Decimal("0.05") + Decimal(1) / (Decimal(total_staking_balance) / Decimal(converted_plot_size) + Decimal("0.05"))
 
     return round(sf, 2)
-
