@@ -1,8 +1,8 @@
-# silicoin-blockchain (SIT)
+# petroleum-blockchain (XPT)
 
-![IMG_4734](https://github.com/silicoin-network/silicoin-blockchain-gui/raw/main/src/assets/img/chia_circle.png)
+![IMG_4734](https://github.com/petroleum-network/petroleum-blockchain-gui/raw/main/src/assets/img/chia_circle.png)
 
-Silicoin(SIT) is a modern cryptocurrency built from scratch, designed to be efficient, decentralized, and secure. Here are some of the features and benefits:
+Petroleum(XPT) is a modern cryptocurrency built from scratch, designed to be efficient, decentralized, and secure. Here are some of the features and benefits:
 * [Proof of space and time](https://docs.google.com/document/d/1tmRIb7lgi4QfKkNaxuKOBHRmwbVlGL4f7EsBDr_5xZE/edit) based consensus which allows anyone to farm with commodity hardware
 * Very easy to use full node and farmer GUI and cli (thousands of nodes active on mainnet)
 * Simplified UTXO based transaction model, with small on-chain state
@@ -16,7 +16,7 @@ Silicoin(SIT) is a modern cryptocurrency built from scratch, designed to be effi
 ## Installing
 
 Please visit our wiki for more information:
-[wiki](https://github.com/silicoin-network/silicoin-blockchain/wiki).
+[wiki](https://github.com/petroleum-network/petroleum-blockchain/wiki).
 
 ## Resource Links
 
@@ -33,33 +33,33 @@ Please visit our wiki for more information:
 1. Query the staking addresses according to your farming plot list:
 
    ```
-   $ sit farm summary
+   $ petroleum farm summary
    ...
    Staking addresses:
-     sit1x6jjvepyvjv7395nmtywvx9mknshgy78dsmuu38m0e9grxr080nsltjugr (balance: 0, plots: 27)
+     xpt1x6jjvepyvjv7395nmtywvx9mknshgy78dsmuu38m0e9grxr080nsltjugr (balance: 0, plots: 27)
    ...
    ```
 
 2. Deposit coins to the staking address:
 
    ```
-   $ sit wallet send -t sit1x6jjvepyvjv7395nmtywvx9mknshgy78dsmuu38m0e9grxr080nsltjugr -a 1
+   $ petroleum wallet send -t xpt1x6jjvepyvjv7395nmtywvx9mknshgy78dsmuu38m0e9grxr080nsltjugr -a 1
    ```
 
    Wait for the transaction get confirmed, query staking balance again:
 
    ```
-   $ sit farm summary
+   $ petroleum farm summary
    ...
    Staking addresses:
-     sit1x6jjvepyvjv7395nmtywvx9mknshgy78dsmuu38m0e9grxr080nsltjugr (balance: 1, plots: 27)
+     xpt1x6jjvepyvjv7395nmtywvx9mknshgy78dsmuu38m0e9grxr080nsltjugr (balance: 1, plots: 27)
    ...
    ```
 
 3. Withdraw coins from the staking address:
 
    ```
-   $ sit wallet send_from -s sit1x6jjvepyvjv7395nmtywvx9mknshgy78dsmuu38m0e9grxr080nsltjugr -t $RECEIVER -a 10
+   $ petroleum wallet send_from -s xpt1x6jjvepyvjv7395nmtywvx9mknshgy78dsmuu38m0e9grxr080nsltjugr -t $RECEIVER -a 10
    ```
 
    Do a transaction to transfer the coins from the staking address to any receive address.

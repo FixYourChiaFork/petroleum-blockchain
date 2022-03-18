@@ -33,13 +33,13 @@ network_overrides: &network_overrides
       NUMBER_ZERO_BITS_PLOT_FILTER: 5
   config:
     mainnet:
-      address_prefix: "sit"
+      address_prefix: "xpt"
       default_full_node_port: 22222
     testnet:
-      address_prefix: "tsit"
+      address_prefix: "txpt"
       default_full_node_port: 22222
     devnet:
-      address_prefix: "tsit"
+      address_prefix: "txpt"
       default_full_node_port: 12444
 
 selected_network: &selected_network "mainnet"
@@ -114,7 +114,7 @@ harvester:
 
 pool:
   # Replace this with a real puzzle hash
-  # sit_target_address: sit102gkhhzs60grx7cfnpng5n6rjecr89r86l5s8xux2za8k820cxsq64ssdg
+  # xpt_target_address: xpt102gkhhzs60grx7cfnpng5n6rjecr89r86l5s8xux2za8k820cxsq64ssdg
   logging: *logging
   network_overrides: *network_overrides
   selected_network: *selected_network
@@ -134,7 +134,7 @@ farmer:
   pool_public_keys: []
 
   # Replace this with a real puzzle hash
-  # sit_target_address: sit102gkhhzs60grx7cfnpng5n6rjecr89r86l5s8xux2za8k820cxsq64ssdg
+  # xpt_target_address: xpt102gkhhzs60grx7cfnpng5n6rjecr89r86l5s8xux2za8k820cxsq64ssdg
 
   # If True, starts an RPC server at the following port
   start_rpc_server: True
@@ -155,8 +155,8 @@ farmer:
   update_intervals:
     pool_info: 3600
     # Some larger farmers have reported better performance when setting both of the values below to 1000.
-    pool_farmer_info: 300
-    harvester_cache: 90
+    pool_farmer_info: 1000
+    harvester_cache: 1000
 
 # Don't run this unless you want to run VDF clients on the local machine.
 timelord_launcher:
@@ -290,7 +290,7 @@ full_node:
   # List of trusted DNS seeders to bootstrap from.
   # If you modify this, please change the hardcode as well from FullNode.set_server()
   dns_servers:
-    - dns-introducer.sitnetwork.net
+    - dns-introducer.petroleum.farm
   farmer_peer:
       host: *self_hostname
       port: 22447
@@ -298,7 +298,7 @@ full_node:
       host: *self_hostname
       port: 22446
   introducer_peer:
-      host: introducer.sitnetwork.net
+      host: introducer.petroleum.farm
       port: 21234
   wallet_peer:
     host: *self_hostname
@@ -385,7 +385,7 @@ wallet:
   recent_peer_threshold: 6000
 
   introducer_peer:
-    host: introducer.sitnetwork.net
+    host: introducer.petroleum.farm
     port: 21234
 
   ssl:

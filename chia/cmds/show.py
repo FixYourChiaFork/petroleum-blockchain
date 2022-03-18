@@ -62,7 +62,7 @@ async def show_async(
                 print(f"Current Blockchain Status: Not Synced. Peak height: {peak.height}")
             else:
                 print("\nSearching for an initial chain\n")
-                print("You may be able to expedite with 'sit show -a host:port' using a known node.\n")
+                print("You may be able to expedite with 'petroleum show -a host:port' using a known node.\n")
 
             if peak is not None:
                 if peak.is_transaction_block:
@@ -81,7 +81,7 @@ async def show_async(
                     f"                 Height: {peak.height:>10}\n",
                 )
 
-                print("Estimated network space: ", end="")
+                print("Estimated effective network space: ", end="")
                 print(format_bytes(blockchain_state["space"]))
                 print(f"Current difficulty: {difficulty}")
                 print(f"Current VDF sub_slot_iters: {sub_slot_iters}")

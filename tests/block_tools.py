@@ -1296,7 +1296,7 @@ def get_challenges(
 
 
 def get_plot_dir() -> Path:
-    cache_path = Path(os.path.expanduser(os.getenv("SIT_ROOT", "~/.chia/"))) / "test-plots"
+    cache_path = Path(os.path.expanduser(os.getenv("PETROLEUM_ROOT", "~/.petroleum/"))) / "test-plots"
     mkdir(cache_path)
     return cache_path
 

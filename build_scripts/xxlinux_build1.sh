@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# git clone https://github.com/silicoin-network/silicoin-blockchain.git
-# cd silicoin-blockchain
+# git clone https://github.com/petroleum-network/petroleum-blockchain.git
+# cd petroleum-blockchain
 # git submodule update --init --recursive
 
 echo "clean source ========================="
@@ -44,7 +44,7 @@ deactivate
 echo "cp daemon ========================="
 #daemon
 #cp -r dist/daemon ../chia-blockchain-gui
-rm -rf ../../sit-linux
-cp -r dist/daemon ../../sit-linux
+rm -rf ../../petroleum-linux
+cp -r dist/daemon ../../petroleum-linux
 cd ../
 

@@ -56,7 +56,7 @@ except ImportError:
 
 log = logging.getLogger(__name__)
 
-service_plotter = "sit plots create"
+service_plotter = "petroleum plots create"
 
 
 async def fetch(url: str):
@@ -89,15 +89,15 @@ class PlotEvent(str, Enum):
 # determine if application is a script file or frozen exe
 if getattr(sys, "frozen", False):
     name_map = {
-        "sit": "sit",
-        "sit_wallet": "start_wallet",
-        "sit_full_node": "start_full_node",
-        "sit_harvester": "start_harvester",
-        "sit_farmer": "start_farmer",
-        "sit_introducer": "start_introducer",
-        "sit_timelord": "start_timelord",
-        "sit_timelord_launcher": "timelord_launcher",
-        "sit_full_node_simulator": "start_simulator",
+        "petroleum": "petroleum",
+        "petroleum_wallet": "start_wallet",
+        "petroleum_full_node": "start_full_node",
+        "petroleum_harvester": "start_harvester",
+        "petroleum_farmer": "start_farmer",
+        "petroleum_introducer": "start_introducer",
+        "petroleum_timelord": "start_timelord",
+        "petroleum_timelord_launcher": "timelord_launcher",
+        "petroleum_full_node_simulator": "start_simulator",
     }
 
     def executable_for_service(service_name: str) -> str:
@@ -1101,7 +1101,7 @@ class WebSocketServer:
 
         # TODO: fix this hack
         asyncio.get_event_loop().call_later(5, lambda *args: sys.exit(0))
-        log.info("silicoin daemon exiting in 5 seconds")
+        log.info("petroleum daemon exiting in 5 seconds")
 
         response = {"success": True}
         return response
@@ -1158,8 +1158,8 @@ def plotter_log_path(root_path: Path, id: str):
 
 
 def launch_plotter(root_path: Path, service_name: str, service_array: List[str], id: str):
-    # we need to pass on the possibly altered SIT_ROOT
-    os.environ["SIT_ROOT"] = str(root_path)
+    # we need to pass on the possibly altered PETROLEUM_ROOT
+    os.environ["PETROLEUM_ROOT"] = str(root_path)
     service_executable = executable_for_service(service_array[0])
 
     # Swap service name with name of executable
@@ -1208,14 +1208,14 @@ def launch_service(root_path: Path, service_command) -> Tuple[subprocess.Popen, 
     """
     Launch a child process.
     """
-    # set up SIT_ROOT
+    # set up PETROLEUM_ROOT
     # invoke correct script
     # save away PID
 
-    # we need to pass on the possibly altered SIT_ROOT
-    os.environ["SIT_ROOT"] = str(root_path)
+    # we need to pass on the possibly altered PETROLEUM_ROOT
+    os.environ["PETROLEUM_ROOT"] = str(root_path)
 
-    log.debug(f"Launching service with SIT_ROOT: {os.environ['SIT_ROOT']}")
+    log.debug(f"Launching service with PETROLEUM_ROOT: {os.environ['PETROLEUM_ROOT']}")
 
     # Insert proper e
     service_array = service_command.split()
@@ -1394,7 +1394,7 @@ async def async_run_daemon(root_path: Path, wait_for_unlock: bool = False) -> in
     # since it might be necessary to wait for the GUI to unlock the keyring first.
     chia_init(root_path, should_check_keys=(not wait_for_unlock))
     config = load_config(root_path, "config.yaml")
-    setproctitle("sit_daemon")
+    setproctitle("petroleum_daemon")
     initialize_logging("daemon", config["logging"], root_path)
     lockfile = singleton(daemon_launch_lock_path(root_path))
     crt_path = root_path / config["daemon_ssl"]["private_crt"]
