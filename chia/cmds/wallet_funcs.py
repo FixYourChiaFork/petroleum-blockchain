@@ -311,7 +311,7 @@ async def get_wallet(wallet_client: WalletRpcClient, fingerprint: int = None) ->
 
 
 async def execute_with_wallet(
-        wallet_rpc_port: Optional[int], fingerprint: int, extra_params: Dict, function: Callable
+    wallet_rpc_port: Optional[int], fingerprint: int, extra_params: Dict, function: Callable
 ) -> None:
     try:
         config = load_config(DEFAULT_ROOT_PATH, "config.yaml")
