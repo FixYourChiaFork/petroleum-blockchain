@@ -36,14 +36,14 @@ Please visit our wiki for more information:
    $ petroleum farm summary
    ...
    Staking addresses:
-     sit1x6jjvepyvjv7395nmtywvx9mknshgy78dsmuu38m0e9grxr080nsltjugr (balance: 0, plots: 27)
+     xpt1x6jjvepyvjv7395nmtywvx9mknshgy78dsmuu38m0e9grxr080nsltjugr (balance: 0, plots: 27)
    ...
    ```
 
 2. Deposit coins to the staking address:
 
    ```
-   $ petroleum wallet send -t sit1x6jjvepyvjv7395nmtywvx9mknshgy78dsmuu38m0e9grxr080nsltjugr -a 1
+   $ petroleum wallet send -t xpt1x6jjvepyvjv7395nmtywvx9mknshgy78dsmuu38m0e9grxr080nsltjugr -a 1
    ```
 
    Wait for the transaction get confirmed, query staking balance again:
@@ -52,14 +52,14 @@ Please visit our wiki for more information:
    $ petroleum farm summary
    ...
    Staking addresses:
-     sit1x6jjvepyvjv7395nmtywvx9mknshgy78dsmuu38m0e9grxr080nsltjugr (balance: 1, plots: 27)
+     xpt1x6jjvepyvjv7395nmtywvx9mknshgy78dsmuu38m0e9grxr080nsltjugr (balance: 1, plots: 27)
    ...
    ```
 
 3. Withdraw coins from the staking address:
 
    ```
-   $ petroleum wallet send_from -s sit1x6jjvepyvjv7395nmtywvx9mknshgy78dsmuu38m0e9grxr080nsltjugr -t $RECEIVER -a 10
+   $ petroleum wallet send_from -s xpt1x6jjvepyvjv7395nmtywvx9mknshgy78dsmuu38m0e9grxr080nsltjugr -t $RECEIVER -a 10
    ```
 
    Do a transaction to transfer the coins from the staking address to any receive address.
