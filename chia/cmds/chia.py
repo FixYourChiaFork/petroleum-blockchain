@@ -42,7 +42,7 @@ def monkey_patch_click() -> None:
 
 
 @click.group(
-    help=f"\n  Manage silicoin blockchain infrastructure ({DIST_NAME} {__version__})\n",
+    help=f"\n  Manage petroleum blockchain infrastructure ({DIST_NAME} {__version__})\n",
     epilog="Try 'sit start node', 'sit netspace -d 192', or 'sit show -s'",
     context_settings=CONTEXT_SETTINGS,
 )
@@ -86,18 +86,18 @@ if not supports_keyring_passphrase():
     remove_passphrase_options_from_cmd(cli)
 
 
-@cli.command("version", short_help="Show silicoin version")
+@cli.command("version", short_help="Show petroleum version")
 def version_cmd() -> None:
     print(DIST_NAME, __version__)
 
 
-@cli.command("run_daemon", short_help="Runs silicoin daemon")
+@cli.command("run_daemon", short_help="Runs petroleum daemon")
 @click.option(
     "--wait-for-unlock",
     help="If the keyring is passphrase-protected, the daemon will wait for an unlock command before accessing keys",
     default=False,
     is_flag=True,
-    hidden=True,  # --wait-for-unlock is only set when launched by silicoin start <service>
+    hidden=True,  # --wait-for-unlock is only set when launched by petroleum start <service>
 )
 @click.pass_context
 def run_daemon_cmd(ctx: click.Context, wait_for_unlock: bool) -> None:

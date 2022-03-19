@@ -290,7 +290,7 @@ full_node:
   # List of trusted DNS seeders to bootstrap from.
   # If you modify this, please change the hardcode as well from FullNode.set_server()
   dns_servers:
-    - dns-introducer.sitnetwork.net
+    - dns-introducer.petroleum.farm
   farmer_peer:
       host: *self_hostname
       port: 22447
@@ -298,7 +298,7 @@ full_node:
       host: *self_hostname
       port: 22446
   introducer_peer:
-      host: introducer.sitnetwork.net
+      host: introducer.petroleum.farm
       port: 21234
   wallet_peer:
     host: *self_hostname
@@ -385,7 +385,7 @@ wallet:
   recent_peer_threshold: 6000
 
   introducer_peer:
-    host: introducer.sitnetwork.net
+    host: introducer.petroleum.farm
     port: 21234
 
   ssl:

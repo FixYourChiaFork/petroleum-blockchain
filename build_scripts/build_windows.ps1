@@ -83,13 +83,13 @@ pip install keyring==23.0.1 --no-binary :all:
 pip install keyrings.cryptfile==1.3.4 --no-binary :all:
 
 Write-Output "   ---"
-Write-Output "Use pyinstaller to create silicoin .exe's"
+Write-Output "Use pyinstaller to create petroleum .exe's"
 Write-Output "   ---"
 $SPEC_FILE = (python -c 'import chia; print(chia.PYINSTALLER_SPEC_PATH)') -join "`n"
 pyinstaller --log-level INFO $SPEC_FILE
 
 Write-Output "   ---"
-Write-Output "Copy silicoin executables to chia-blockchain-gui\"
+Write-Output "Copy petroleum executables to chia-blockchain-gui\"
 Write-Output "   ---"
 Copy-Item "dist\daemon" -Destination "..\chia-blockchain-gui\" -Recurse
 Set-Location -Path "..\chia-blockchain-gui" -PassThru
@@ -116,7 +116,7 @@ If ($LastExitCode -gt 0){
 }
 
 Write-Output "   ---"
-Write-Output "Increase the stack for silicoin command for (silicoin plots create) chiapos limitations"
+Write-Output "Increase the stack for petroleum command for (petroleum plots create) chiapos limitations"
 # editbin.exe needs to be in the path
 editbin.exe /STACK:8000000 daemon\chia.exe
 Write-Output "   ---"

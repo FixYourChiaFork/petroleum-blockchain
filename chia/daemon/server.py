@@ -1101,7 +1101,7 @@ class WebSocketServer:
 
         # TODO: fix this hack
         asyncio.get_event_loop().call_later(5, lambda *args: sys.exit(0))
-        log.info("silicoin daemon exiting in 5 seconds")
+        log.info("petroleum daemon exiting in 5 seconds")
 
         response = {"success": True}
         return response
@@ -1158,8 +1158,8 @@ def plotter_log_path(root_path: Path, id: str):
 
 
 def launch_plotter(root_path: Path, service_name: str, service_array: List[str], id: str):
-    # we need to pass on the possibly altered SIT_ROOT
-    os.environ["SIT_ROOT"] = str(root_path)
+    # we need to pass on the possibly altered PETROLEUM_ROOT
+    os.environ["PETROLEUM_ROOT"] = str(root_path)
     service_executable = executable_for_service(service_array[0])
 
     # Swap service name with name of executable
@@ -1208,14 +1208,14 @@ def launch_service(root_path: Path, service_command) -> Tuple[subprocess.Popen, 
     """
     Launch a child process.
     """
-    # set up SIT_ROOT
+    # set up PETROLEUM_ROOT
     # invoke correct script
     # save away PID
 
-    # we need to pass on the possibly altered SIT_ROOT
-    os.environ["SIT_ROOT"] = str(root_path)
+    # we need to pass on the possibly altered PETROLEUM_ROOT
+    os.environ["PETROLEUM_ROOT"] = str(root_path)
 
-    log.debug(f"Launching service with SIT_ROOT: {os.environ['SIT_ROOT']}")
+    log.debug(f"Launching service with PETROLEUM_ROOT: {os.environ['PETROLEUM_ROOT']}")
 
     # Insert proper e
     service_array = service_command.split()

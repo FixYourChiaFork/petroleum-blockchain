@@ -1,6 +1,6 @@
 #!/bin/bash
 
-APP_BUNDLEID="net.silicoin.blockchain"
+APP_BUNDLEID="net.petroleum.blockchain"
 APP_NAME="SIT"
 DIR_NAME=$APP_NAME-darwin-x64
 

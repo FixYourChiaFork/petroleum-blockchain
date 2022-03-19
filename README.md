@@ -1,8 +1,8 @@
-# silicoin-blockchain (SIT)
+# petroleum-blockchain (SIT)
 
-![IMG_4734](https://github.com/silicoin-network/silicoin-blockchain-gui/raw/main/src/assets/img/chia_circle.png)
+![IMG_4734](https://github.com/petroleum-network/petroleum-blockchain-gui/raw/main/src/assets/img/chia_circle.png)
 
-Silicoin(SIT) is a modern cryptocurrency built from scratch, designed to be efficient, decentralized, and secure. Here are some of the features and benefits:
+Petroleum(SIT) is a modern cryptocurrency built from scratch, designed to be efficient, decentralized, and secure. Here are some of the features and benefits:
 * [Proof of space and time](https://docs.google.com/document/d/1tmRIb7lgi4QfKkNaxuKOBHRmwbVlGL4f7EsBDr_5xZE/edit) based consensus which allows anyone to farm with commodity hardware
 * Very easy to use full node and farmer GUI and cli (thousands of nodes active on mainnet)
 * Simplified UTXO based transaction model, with small on-chain state
@@ -16,7 +16,7 @@ Silicoin(SIT) is a modern cryptocurrency built from scratch, designed to be effi
 ## Installing
 
 Please visit our wiki for more information:
-[wiki](https://github.com/silicoin-network/silicoin-blockchain/wiki).
+[wiki](https://github.com/petroleum-network/petroleum-blockchain/wiki).
 
 ## Resource Links
 

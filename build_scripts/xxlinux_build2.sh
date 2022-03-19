@@ -38,7 +38,7 @@ fi
 
 
 APP_VERSION=$1
-APP_BUNDLEID="net.silicoin.blockchain"
+APP_BUNDLEID="net.petroleum.blockchain"
 APP_NAME="SIT"
 DMG_NAME="$APP_NAME-$APP_VERSION"
 
