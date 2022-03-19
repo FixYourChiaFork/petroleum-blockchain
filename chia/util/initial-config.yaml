@@ -33,7 +33,7 @@ network_overrides: &network_overrides
       NUMBER_ZERO_BITS_PLOT_FILTER: 5
   config:
     mainnet:
-      address_prefix: "sit"
+      address_prefix: "xpt"
       default_full_node_port: 22222
     testnet:
       address_prefix: "tsit"

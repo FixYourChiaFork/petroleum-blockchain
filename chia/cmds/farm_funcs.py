@@ -329,7 +329,7 @@ async def summary(
             sf = await get_est_staking_factor(PlotStats.capacities[ph], balance)
             PlotStats.staking_factors[ph] = sf
 
-            print(f"    Balance: {balance} SIT")
+            print(f"    Balance: {balance} XPT")
             print(f"    Estimated staking factor: {sf}")
     else:
         print("Plot count: Unknown")

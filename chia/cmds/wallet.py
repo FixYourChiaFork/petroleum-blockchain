@@ -98,17 +98,17 @@ def get_transactions_cmd(
 )
 @click.option("-f", "--fingerprint", help="Set the fingerprint to specify which wallet to use", type=int)
 @click.option("-i", "--id", help="Id of the wallet to use", type=int, default=1, show_default=True, required=True)
-@click.option("-a", "--amount", help="How much Petroleum to send, in SIT", type=str, required=True)
+@click.option("-a", "--amount", help="How much Petroleum to send, in XPT", type=str, required=True)
 @click.option(
     "-m",
     "--fee",
-    help="Set the fees for the transaction, in SIT",
+    help="Set the fees for the transaction, in XPT",
     type=str,
     default="0",
     show_default=True,
     required=True,
 )
-@click.option("-t", "--address", help="Address to send the SIT", type=str, required=True)
+@click.option("-t", "--address", help="Address to send the XPT", type=str, required=True)
 @click.option(
     "-o", "--override", help="Submits transaction without checking for unusual values", is_flag=True, default=False
 )
@@ -144,9 +144,9 @@ def send_cmd(
 )
 @click.option("-f", "--fingerprint", help="Set the fingerprint to specify which wallet to use", type=int)
 @click.option("-i", "--id", help="Id of the wallet to use", type=int, default=1, show_default=True, required=True)
-@click.option("-s", "--source", help="Source address to send the SIT from", type=str, required=True)
-@click.option("-t", "--address", help="Target address that will receive the SIT", type=str, required=True)
-@click.option("-a", "--amount", help="How much Petroleum to send, in SIT", type=str, required=True)
+@click.option("-s", "--source", help="Source address to send the XPT from", type=str, required=True)
+@click.option("-t", "--address", help="Target address that will receive the XPT", type=str, required=True)
+@click.option("-a", "--amount", help="How much Petroleum to send, in XPT", type=str, required=True)
 def send_from_cmd(
     rpc_port: Optional[int],
     wallet_rpc_port: Optional[int],
