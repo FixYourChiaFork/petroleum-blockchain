@@ -510,8 +510,8 @@ class TestRpc:
 
             root_path = farmer_api.farmer._root_path
             config = load_config(root_path, "config.yaml")
-            assert config["farmer"]["sit_target_address"] == encode_puzzle_hash(new_ph, "sit")
-            assert config["pool"]["sit_target_address"] == encode_puzzle_hash(new_ph_3, "sit")
+            assert config["farmer"]["xpt_target_address"] == encode_puzzle_hash(new_ph, "sit")
+            assert config["pool"]["xpt_target_address"] == encode_puzzle_hash(new_ph_3, "sit")
 
             new_ph_3_encoded = encode_puzzle_hash(new_ph_3, "sit")
             added_char = new_ph_3_encoded + "a"

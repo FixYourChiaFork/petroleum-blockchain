@@ -1,19 +1,19 @@
 from typing import Generator, KeysView
 
 SERVICES_FOR_GROUP = {
-    "all": "sit_harvester sit_timelord_launcher sit_timelord sit_farmer sit_full_node sit_wallet".split(),
-    "node": "sit_full_node".split(),
-    "harvester": "sit_harvester".split(),
-    "farmer": "sit_harvester sit_farmer sit_full_node sit_wallet".split(),
-    "farmer-no-wallet": "sit_harvester sit_farmer sit_full_node".split(),
-    "farmer-only": "sit_farmer".split(),
-    "timelord": "sit_timelord_launcher sit_timelord sit_full_node".split(),
-    "timelord-only": "sit_timelord".split(),
-    "timelord-launcher-only": "sit_timelord_launcher".split(),
-    "wallet": "sit_wallet sit_full_node".split(),
-    "wallet-only": "sit_wallet".split(),
-    "introducer": "sit_introducer".split(),
-    "simulator": "sit_full_node_simulator".split(),
+    "all": "petroleum_harvester petroleum_timelord_launcher petroleum_timelord petroleum_farmer petroleum_full_node petroleum_wallet".split(),
+    "node": "petroleum_full_node".split(),
+    "harvester": "petroleum_harvester".split(),
+    "farmer": "petroleum_harvester petroleum_farmer petroleum_full_node petroleum_wallet".split(),
+    "farmer-no-wallet": "petroleum_harvester petroleum_farmer petroleum_full_node".split(),
+    "farmer-only": "petroleum_farmer".split(),
+    "timelord": "petroleum_timelord_launcher petroleum_timelord petroleum_full_node".split(),
+    "timelord-only": "petroleum_timelord".split(),
+    "timelord-launcher-only": "petroleum_timelord_launcher".split(),
+    "wallet": "petroleum_wallet petroleum_full_node".split(),
+    "wallet-only": "petroleum_wallet".split(),
+    "introducer": "petroleum_introducer".split(),
+    "simulator": "petroleum_full_node_simulator".split(),
 }
 
 
