@@ -36,10 +36,10 @@ network_overrides: &network_overrides
       address_prefix: "xpt"
       default_full_node_port: 22222
     testnet:
-      address_prefix: "tsit"
+      address_prefix: "txpt"
       default_full_node_port: 22222
     devnet:
-      address_prefix: "tsit"
+      address_prefix: "txpt"
       default_full_node_port: 12444
 
 selected_network: &selected_network "mainnet"

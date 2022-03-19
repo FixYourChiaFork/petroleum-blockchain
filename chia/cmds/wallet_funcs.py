@@ -332,7 +332,7 @@ async def execute_with_wallet(
         if isinstance(e, aiohttp.ClientConnectorError):
             print(
                 f"Connection error. Check if the wallet is running at {wallet_rpc_port}. "
-                "You can run the wallet via:\n\tsit start wallet"
+                "You can run the wallet via:\n\tpetroleum start wallet"
             )
         else:
             print(f"Exception from 'wallet' {e}")
