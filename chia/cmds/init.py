@@ -24,9 +24,9 @@ def init_cmd(ctx: click.Context, create_certs: str, fix_ssl_permissions: bool, t
 
     \b
     Follow these steps to create new certificates for a remote harvester:
-    - Make a copy of your Farming Machine CA directory: ~/.sit/[version]/config/ssl/ca
-    - Shut down all petroleum daemon processes with `sit stop all -d`
-    - Run `sit init -c [directory]` on your remote harvester,
+    - Make a copy of your Farming Machine CA directory: ~/.petroleum/[version]/config/ssl/ca
+    - Shut down all petroleum daemon processes with `petroleum stop all -d`
+    - Run `petroleum init -c [directory]` on your remote harvester,
       where [directory] is the the copy of your Farming Machine CA directory
     - Get more details on remote harvester on Petroleum wiki:
       https://github.com/petroleum-network/petroleum-blockchain/wiki/Farming-on-many-machines

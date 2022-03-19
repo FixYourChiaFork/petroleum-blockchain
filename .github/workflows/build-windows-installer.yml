@@ -149,7 +149,7 @@ jobs:
     #   uses: actions/upload-artifact@v2.2.2
     #   with:
     #     name: Windows-Exe
-    #     path: ${{ github.workspace }}\chia-blockchain-gui\SIT-win32-x64\
+    #     path: ${{ github.workspace }}\chia-blockchain-gui\PETROLEUM-win32-x64\
 
     - name: Upload Installer to artifacts
       uses: actions/upload-artifact@v2.2.2

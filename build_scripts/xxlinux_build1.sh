@@ -44,7 +44,7 @@ deactivate
 echo "cp daemon ========================="
 #daemon
 #cp -r dist/daemon ../chia-blockchain-gui
-rm -rf ../../sit-linux
-cp -r dist/daemon ../../sit-linux
+rm -rf ../../petroleum-linux
+cp -r dist/daemon ../../petroleum-linux
 cd ../
 

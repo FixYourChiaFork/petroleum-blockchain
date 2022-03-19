@@ -43,7 +43,7 @@ def monkey_patch_click() -> None:
 
 @click.group(
     help=f"\n  Manage petroleum blockchain infrastructure ({DIST_NAME} {__version__})\n",
-    epilog="Try 'sit start node', 'sit netspace -d 192', or 'sit show -s'",
+    epilog="Try 'petroleum start node', 'petroleum netspace -d 192', or 'petroleum show -s'",
     context_settings=CONTEXT_SETTINGS,
 )
 @click.option("--root-path", default=DEFAULT_ROOT_PATH, help="Config file root", type=click.Path(), show_default=True)

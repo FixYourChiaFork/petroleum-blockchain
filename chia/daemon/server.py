@@ -56,7 +56,7 @@ except ImportError:
 
 log = logging.getLogger(__name__)
 
-service_plotter = "sit plots create"
+service_plotter = "petroleum plots create"
 
 
 async def fetch(url: str):
@@ -89,7 +89,7 @@ class PlotEvent(str, Enum):
 # determine if application is a script file or frozen exe
 if getattr(sys, "frozen", False):
     name_map = {
-        "sit": "sit",
+        "petroleum": "petroleum",
         "sit_wallet": "start_wallet",
         "sit_full_node": "start_full_node",
         "sit_harvester": "start_harvester",

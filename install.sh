@@ -129,4 +129,4 @@ echo "https://github.com/petroleum-network/petroleum-blockchain/wiki/Quick-Start
 echo ""
 echo "To install the GUI type 'sh install-gui.sh' after '. ./activate'."
 echo ""
-echo "Type '. ./activate' and then 'sit init' to begin."
+echo "Type '. ./activate' and then 'petroleum init' to begin."

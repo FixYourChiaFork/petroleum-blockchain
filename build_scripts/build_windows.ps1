@@ -121,7 +121,7 @@ Write-Output "Increase the stack for petroleum command for (petroleum plots crea
 editbin.exe /STACK:8000000 daemon\chia.exe
 Write-Output "   ---"
 
-$appName = "SIT"
+$appName = "Petroleum"
 $packageVersion = "$env:CHIA_INSTALLER_VERSION"
 $packageName = "$appName-$packageVersion"
 

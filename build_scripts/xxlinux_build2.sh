@@ -39,7 +39,7 @@ fi
 
 APP_VERSION=$1
 APP_BUNDLEID="net.petroleum.blockchain"
-APP_NAME="SIT"
+APP_NAME="Petroleum"
 DMG_NAME="$APP_NAME-$APP_VERSION"
 
 PLATFORM="amd64"
