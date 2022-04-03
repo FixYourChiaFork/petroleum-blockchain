@@ -155,7 +155,7 @@ jobs:
       uses: actions/upload-artifact@v2.2.2
       with:
         name: Windows-Installers
-        path: ${{ github.workspace }}\chia-blockchain-gui\release-builds\
+        path: ${{ github.workspace }}\chia-blockchain-gui\release-builds\windows-installer\PetroleumSetup-${{ steps.version_number.outputs.CHIA_INSTALLER_VERSION }}.exe
 
 
     # - name: Install AWS CLI

@@ -1,0 +1,13 @@
+Daemon: 33310
+Farmer: 33347
+Farmer RPC: 33359
+Full Node: 33344
+Full Node RPC: 33377
+Harvester: 33348
+Harvester RPC: 33360
+Introducer: 33345
+TimeLord Launcher: 33320
+TimeLord: 33336
+UI: 33322
+Wallet: 33349
+Wallet RPC: 33356

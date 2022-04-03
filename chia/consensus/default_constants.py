@@ -28,14 +28,14 @@ testnet_kwargs = {
     # Used as the initial cc rc challenges, as well as first block back pointers, and first SES back pointer
     # We override this value based on the chain being run (testnet0, testnet1, mainnet, etc)
     # Default used for tests is std_hash(b'')
-    "GENESIS_CHALLENGE": bytes.fromhex("a863ac9871ebeaf1fdc7ed6acd3d5c8c39441d53187a936868c87e1e233a3819"),
+    "GENESIS_CHALLENGE": bytes.fromhex("e0a08a9c722f72d353edc1417ff56d0d07d52e4227a77ffca89c222c4f15f0ff"),
     # Forks of chia should change this value to provide replay attack protection. This is set to mainnet genesis chall
-    "AGG_SIG_ME_ADDITIONAL_DATA": bytes.fromhex("ecbf4458b47e39c60afec66e245fccb042871417ffc5200cb0140346c2e044d0"),
+    "AGG_SIG_ME_ADDITIONAL_DATA": bytes.fromhex("7cd1b01aee581a631e3a49de6b83eb322cdb36fcbac537fa7ecf5eb847f0cc46"),
     "GENESIS_PRE_FARM_POOL_PUZZLE_HASH": bytes.fromhex(
-        "d819c28786af76b7977b1f941d8f48e0d74bd6b89ccc4d1471b6be8430186c3a"
+        "2e2c74158e737595a5041b895538614c6d0d05a14a5adb2b87e712b42fe09c47"
     ),
     "GENESIS_PRE_FARM_FARMER_PUZZLE_HASH": bytes.fromhex(
-        "d819c28786af76b7977b1f941d8f48e0d74bd6b89ccc4d1471b6be8430186c3a"
+        "2e2c74158e737595a5041b895538614c6d0d05a14a5adb2b87e712b42fe09c47"
     ),
     "MAX_VDF_WITNESS_SIZE": 64,
     # Size of mempool = 50x the size of block # temporary change until #9125 gets in
@@ -55,10 +55,6 @@ testnet_kwargs = {
     "MAX_GENERATOR_SIZE": 1000000,
     "MAX_GENERATOR_REF_LIST_SIZE": 512,  # Number of references allowed in the block generator ref list
     "POOL_SUB_SLOT_ITERS": 37600000000,  # iters limit * NUM_SPS
-    # hardfork block of rewarding change.
-    "HF_BLOCK_REWARD": -1,
-    # hardfork block of staking change.
-    "HF_BLOCK_STAKING": -1,
 }
 
 
