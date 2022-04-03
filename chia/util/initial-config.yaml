@@ -81,7 +81,7 @@ harvester:
 
   # If True, starts an RPC server at the following port
   start_rpc_server: True
-  rpc_port: 22560
+  rpc_port: 33360
   num_threads: 30
   plots_refresh_parameter:
     interval_seconds: 120 # The interval in seconds to refresh the plot file manager
